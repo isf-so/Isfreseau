@@ -1,1 +1,1 @@
-document.querySelector("#salut").innerHTML= "salut"+ window.pseudoVariable ;
+document.querySelector("#salut").innerHTML= window.pseudoVariable ;
