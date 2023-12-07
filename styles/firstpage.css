@@ -80,3 +80,16 @@ button {
 button:hover {
     background-color: #555;
 }
+.contain {
+    max-width: 800px; /* ou tout autre valeur souhaitée */
+    margin: 0 auto; /* cela centre la div horizontalement */
+    padding: 20px; /* pour l'espace à droite et à gauche */
+}
+
+.text {
+    text-align: center; /* centre le texte à l'intérieur de la div */
+}
+
+.outil {
+    margin-top: 20px; /* espace entre la première et la deuxième div */
+}

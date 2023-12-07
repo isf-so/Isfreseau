@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reseau_isf</title>
     <link rel="stylesheet" href="../styles/firstpage.css">
+    <link rel="icon" type="image/x-icon" href="../img/OIG.jpg">
 </head>
 <header>
     <div class="header">
-        <div >
+        <div>
             <p id="salut"></p>
         </div>
         <div class="svg">
@@ -24,17 +25,24 @@
 </header>
 
 <body>
-    <h2>Publier une nouvelle image</h2>
+    <div class="contain">
+        <div class="text">
+            <h2>Publier une nouvelle image</h2>
+        </div>
+        <div class="outil">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="image-upload">Choisir une image :</label>
+                <input type="file" id="image-upload" name="image" accept="image/*" required>
+                <br>
+                <label for="caption">Légende :</label>
+                <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Ajouter une légende..."
+                    required></textarea>
+                <br>
+                <button type="submit">Publier</button>
+            </form>
+        </div>
+    </div>
 
-    <form action="#" method="post" enctype="multipart/form-data">
-        <label for="image-upload">Choisir une image :</label>
-        <input type="file" id="image-upload" name="image" accept="image/*" required>
-        <br>
-        <label for="caption">Légende :</label>
-        <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Ajouter une légende..." required></textarea>
-        <br>
-        <button type="submit">Publier</button>
-    </form>
 </body>
 <script src="../script/connexion.js"></script>
 <script src="../script/firstjs.js"></script>
