@@ -6,12 +6,10 @@ body{
     background-color: rgb(128, 128, 128);
     border-radius: 20px;
     padding: 9px;
-    margin-left: 38%;
-    margin-right: 38%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 50%;
 }
 h2{
     color: black;
