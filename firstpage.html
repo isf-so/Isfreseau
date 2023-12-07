@@ -27,20 +27,20 @@
 <body>
     <div class="contain">
         <div class="text">
-            <h2>Publier une nouvelle image</h2>
+            <h2>Post !</h2>
         </div>
         <div class="outil">
-            <form action="#" method="post" enctype="multipart/form-data">
-                <label for="image-upload">Choisir une image :</label>
-                <input type="file" id="image-upload" name="image" accept="image/*" required>
+            <form>
                 <br>
-                <label for="caption">Légende :</label>
-                <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Ajouter une légende..."
-                    required></textarea>
+                <label for="caption">Commentaire :</label>
+                <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Ajouter une légende..."required></textarea>
                 <br>
-                <button type="submit">Publier</button>
+                <h3 onclick="post()">Publier</h3>
             </form>
         </div>
+    </div>
+    <div id="post">
+
     </div>
 
 </body>
