@@ -3,13 +3,20 @@ body{
     color: white;
 }
 .conexion{
+    background-color: rgb(128, 128, 128);
+    border-radius: 20px;
+    padding: 9px;
+    margin-left: 38%;
+    margin-right: 38%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 25vh;
 }
+h2{
+    color: black;
+}
 .input{
-    margin-left: 9vh;
     background-color: white;
     color: black;
     border-radius: 15px;
