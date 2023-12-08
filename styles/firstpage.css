@@ -103,3 +103,18 @@ button:hover {
     width: 100%;
     height: 1000000px;
 }
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation {
+    animation: blink 2s infinite; /* 1s de durée, infinie répétition */
+}
