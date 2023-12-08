@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>isf</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="icon" type="image/x-icon" href="img/OIG.jpg">
+    <title>reseau_isf</title>
+    <link rel="stylesheet" href="styles/firstpage.css">
+    <link rel="icon" type="image/x-icon" href="../img/OIG.jpg">
 </head>
+
+
 <body>
-    <div class="conexion">
-        <div class="center">
-            <h2>Connexion</h2>
+    <header>
+        <div class="header">
+            <div>
+                <p id="salut"></p>
+            </div>
+            <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" />
+                    <circle cx="12" cy="10" r="3" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+            </div>
         </div>
-        <div>
-            <form onsubmit="connexion(); return false;">
-                <label for="pseudo">Pseudo :</label>
-                <input type="text" id="pseudo" name="pseudo"><br><br>
-                <label for="motDePasse">Mot de passe :</label>
-                <input type="password" id="motDePasse" name="motDePasse"><br><br>
-                <input type="submit" value="Connexion">
+    </header>
+    <div class="connexion">
+            <div class="center">
+                <h2>Connexion</h2>
+            </div>
+            <div>
+                <form onsubmit="connexion(); return false;">
+                    <label for="pseudo">Pseudo :</label>
+                    <input type="text" id="pseudo" name="pseudo"><br><br>
+                    <label for="motDePasse">Mot de passe :</label>
+                    <input type="password" id="motDePasse" name="motDePasse"><br><br>
+                    <input type="submit" value="Connexion">
+                </form>
+            </div>
+    </div>
+    <div class="contain">
+        <div class="text">
+            <h2>Post !</h2>
+        </div>
+        <div class="outil">
+            <form>
+                <br>
+                <label for="caption">Commentaire :</label>
+                <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Ajouter une légende..."required></textarea>
+                <br>
+                <h3 onclick="post()">Publier</h3>
             </form>
         </div>
-        
     </div>
-    
+    <div id="post">
+
+    </div>
+
 </body>
 <script src="script/data.js"></script>
-<script src="script/connexion.js"></script>
+<script src="script/firstjs.js"></script>
+
+
+
 </html>
