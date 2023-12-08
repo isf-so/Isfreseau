@@ -9,6 +9,7 @@ function connexion() {
     if (pseudoValue.trim() !== "") {
         // Supprimer l'élément
         document.querySelector(".connexion").remove();
+        document.querySelector("#salut").innerHTML = pseudoValue;
     } else {
         // Gérer le cas où l'input pseudo n'est pas rempli
         alert("Veuillez saisir un pseudo avant de soumettre le formulaire.");
@@ -22,7 +23,7 @@ function post() {
     // Créer un élément de publication
     let postElement = document.createElement('div');
     postElement.innerHTML = pseudoValue + " : " + text + '</p>';
-    document.querySelector("#salut").innerHTML = pseudoValue;
+    
 
     // Ajouter la publication à la div #post
     document.getElementById('post').appendChild(postElement);
