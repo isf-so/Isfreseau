@@ -2,9 +2,13 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;;
+    background-color: #f4f4f4;
+    position: relative;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
 .header{
     display: flex;
     align-items: center;
@@ -92,4 +96,10 @@ button:hover {
 
 .outil {
     margin-top: 20px; /* espace entre la première et la deuxième div */
+}
+.connexion{
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 1000000px;
 }
